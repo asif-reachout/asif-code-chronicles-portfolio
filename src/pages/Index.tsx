@@ -4,8 +4,6 @@ import { Moon, Sun, Download, Mail, MapPin, ExternalLink, Github, Linkedin, Star
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 
 const Index = () => {
@@ -21,14 +19,6 @@ const Index = () => {
       document.documentElement.classList.remove('dark');
     }
   }, [isDark]);
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-  };
 
   const skills = [
     'Vue.js', 'Quasar', 'Tailwind CSS', 'Nuxt.js', 
@@ -338,38 +328,61 @@ const Index = () => {
               </span>
             </h2>
             <Card className="max-w-2xl mx-auto">
-              <CardHeader>
+              <CardHeader className="text-center">
                 <CardTitle>Get In Touch</CardTitle>
                 <CardDescription>
-                  Interested in collaborating? Let's discuss your next project!
+                  Ready to collaborate? Let's build something amazing together!
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <form onSubmit={handleFormSubmit} className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <Input placeholder="Your Name" required />
-                    <Input type="email" placeholder="Your Email" required />
-                  </div>
-                  <Textarea placeholder="Your Message" rows={4} required />
-                  <Button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                    Send Message
-                  </Button>
-                </form>
-                <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                  <div className="flex items-center justify-center space-x-4">
-                    <a href="mailto:asif.reachout@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
-                      <Mail className="h-5 w-5" />
-                    </a>
-                    <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
-                      <Github className="h-5 w-5" />
-                    </a>
-                    <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
-                      <Linkedin className="h-5 w-5" />
-                    </a>
-                  </div>
-                  <p className="text-center text-gray-600 dark:text-gray-400 mt-4">
+              <CardContent className="text-center">
+                <div className="mb-8">
+                  <a 
+                    href="mailto:asif.reachout@gmail.com" 
+                    className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg font-medium transition-all duration-300 hover:scale-105"
+                  >
+                    <Mail className="h-5 w-5 mr-2" />
                     asif.reachout@gmail.com
-                  </p>
+                  </a>
+                </div>
+                <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Follow me on social media</p>
+                  <div className="flex items-center justify-center space-x-6">
+                    <a 
+                      href="https://github.com/asif-reachout" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex flex-col items-center space-y-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <div className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
+                        <Github className="h-6 w-6" />
+                      </div>
+                      <span className="text-xs font-medium">asif-reachout</span>
+                    </a>
+                    <a 
+                      href="https://linkedin.com/in/asif-reachout" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex flex-col items-center space-y-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <div className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
+                        <Linkedin className="h-6 w-6" />
+                      </div>
+                      <span className="text-xs font-medium">asif-reachout</span>
+                    </a>
+                    <a 
+                      href="https://twitter.com/asif_reachout" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex flex-col items-center space-y-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <div className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
+                        <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                      </div>
+                      <span className="text-xs font-medium">asif_reachout</span>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
