@@ -172,7 +172,7 @@ const Index = () => {
             <Card className="max-w-3xl mx-auto">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl mb-2">
-                  <span className="text-green-600 dark:text-green-400">20+</span> Projects Completed on Fiverr
+                  <span className="text-green-600 dark:text-green-400">30+</span> Projects Completed on Fiverr
                 </CardTitle>
                 <CardDescription className="text-lg">
                   Delivering exceptional web development solutions to clients worldwide
