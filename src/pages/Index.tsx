@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Moon, Sun, Download, Mail, MapPin, ExternalLink, Github, Linkedin } from 'lucide-react';
+import { Moon, Sun, Download, Mail, MapPin, ExternalLink, Github, Linkedin, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -168,8 +168,60 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
+        {/* Fiverr Freelance Section */}
         <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800/50">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Freelance Success
+              </span>
+            </h2>
+            <Card className="max-w-3xl mx-auto">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl mb-2">
+                  <span className="text-green-600 dark:text-green-400">20+</span> Projects Completed on Fiverr
+                </CardTitle>
+                <CardDescription className="text-lg">
+                  Delivering exceptional web development solutions to clients worldwide
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                  <div className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                    <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">20+</div>
+                    <p className="text-gray-600 dark:text-gray-300">Projects Delivered</p>
+                  </div>
+                  <div className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                    <div className="flex items-center justify-center mb-2">
+                      <Star className="h-6 w-6 text-yellow-500 fill-current" />
+                      <Star className="h-6 w-6 text-yellow-500 fill-current" />
+                      <Star className="h-6 w-6 text-yellow-500 fill-current" />
+                      <Star className="h-6 w-6 text-yellow-500 fill-current" />
+                      <Star className="h-6 w-6 text-yellow-500 fill-current" />
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-300">5-Star Rating</p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Specialized in creating modern, responsive web applications using Vue.js, React, and cutting-edge frontend technologies.
+                  </p>
+                  <Button 
+                    variant="outline" 
+                    className="group"
+                    onClick={() => window.open('https://www.fiverr.com/webtechcod', '_blank')}
+                  >
+                    <ExternalLink className="h-4 w-4 mr-2 group-hover:rotate-45 transition-transform" />
+                    View Fiverr Profile (@webtechcod)
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -211,7 +263,7 @@ const Index = () => {
         </section>
 
         {/* Experience Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800/50">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -240,7 +292,7 @@ const Index = () => {
         </section>
 
         {/* Education & Certifications */}
-        <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800/50">
+        <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -278,7 +330,7 @@ const Index = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800/50">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
