@@ -100,6 +100,11 @@ const Index = () => {
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 p-1">
                   <div className="w-full h-full rounded-full bg-white dark:bg-slate-800 flex items-center justify-center">
                     <span className="text-4xl font-bold text-slate-700 dark:text-slate-300">MA</span>
+                    {/* <img 
+                      src="/profile.jpg" 
+                      alt="Muhammad Asif" 
+                      className="w-full h-full rounded-full object-cover align-middle"
+                    /> */}
                   </div>
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold mb-4">
@@ -115,14 +120,16 @@ const Index = () => {
                   <span>Lahore, Pakistan</span>
                 </div>
                 <p className="text-lg text-slate-700 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Adventurous and ambitious software engineer with a passion for UI/UX, frontend development, 
-                  and futuristic concepts like time travel, sci-fi, and multiverse theories.
+                 Creative-minded Frontend Developer with a passion for sleek UI, smooth UX, and turning ideas into responsive, high-performance web experiences.
+
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white border-0">
+                    <a href="mailto:asif.reachout@gmail.com">
+                      <Button className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white border-0">
                     <Mail className="h-4 w-4 mr-2" />
                     Get In Touch
                   </Button>
+                    </a>
                   <Button variant="outline" className="group border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800">
                     <Download className="h-4 w-4 mr-2 group-hover:animate-bounce" />
                     Download Resume
@@ -169,7 +176,7 @@ const Index = () => {
             <Card className="max-w-3xl mx-auto bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl mb-2">
-                  <span className="text-emerald-500 dark:text-emerald-400">20+</span> Projects Completed on Fiverr
+                  <span className="text-emerald-500 dark:text-emerald-400">30+</span> Projects Completed on Fiverr
                 </CardTitle>
                 <CardDescription className="text-lg text-slate-600 dark:text-slate-400">
                   Delivering exceptional web development solutions to clients worldwide
@@ -178,7 +185,7 @@ const Index = () => {
               <CardContent className="text-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <div className="p-6 bg-slate-50 dark:bg-slate-700 rounded-lg shadow-sm">
-                    <div className="text-3xl font-bold text-blue-500 dark:text-blue-400 mb-2">20+</div>
+                    <div className="text-3xl font-bold text-blue-500 dark:text-blue-400 mb-2">30+</div>
                     <p className="text-slate-600 dark:text-slate-300">Projects Delivered</p>
                   </div>
                   <div className="p-6 bg-slate-50 dark:bg-slate-700 rounded-lg shadow-sm">
