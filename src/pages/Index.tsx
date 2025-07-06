@@ -115,14 +115,17 @@ const Index = () => {
                   <span>Lahore, Pakistan</span>
                 </div>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Adventurous and ambitious software engineer with a passion for UI/UX, frontend development, 
-                  and futuristic concepts like time travel, sci-fi, and multiverse theories.
+                  Creative-minded Frontend Developer with a passion for sleek UI, smooth UX, and turning ideas into responsive, high-performance web experiences.
+
+
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                   <a href="mailto:asif.reachout@gmail.com" >
                   <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                    <Mail className="h-4 w-4 mr-2" />
+                     <Mail className="h-4 w-4 mr-2" />
                     Get In Touch
                   </Button>
+                    </a>
                   <Button variant="outline" className="group">
                     <Download className="h-4 w-4 mr-2 group-hover:animate-bounce" />
                     Download Resume
@@ -178,7 +181,7 @@ const Index = () => {
               <CardContent className="text-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <div className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
-                    <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">20+</div>
+                    <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">30+</div>
                     <p className="text-gray-600 dark:text-gray-300">Projects Delivered</p>
                   </div>
                   <div className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
