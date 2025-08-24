@@ -21,36 +21,38 @@ const Index = () => {
   }, [isDark]);
 
   const skills = [
-    'Vue.js', 'Quasar', 'Tailwind CSS', 'Nuxt.js', 
-    'JavaScript', 'Git', 'React'
+    'Vue.js', 'React', 'TypeScript', 'JavaScript (ES6+)', 
+    'Nuxt.js', 'Next.js', 'Tailwind CSS', 'SCSS/Sass',
+    'Quasar Framework', 'Node.js', 'Git/GitHub', 'Responsive Design',
+    'RESTful APIs', 'GraphQL', 'Progressive Web Apps', 'Performance Optimization'
   ];
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      tech: ["Vue.js", "Quasar", "Node.js"],
-      description: "Modern e-commerce solution with advanced filtering and real-time updates",
+      title: "Enterprise E-Commerce Platform",
+      tech: ["Vue.js", "Quasar", "Node.js", "MongoDB"],
+      description: "Scalable e-commerce solution with advanced search, real-time inventory management, and secure payment integration",
       demo: "#",
       github: "#"
     },
     {
-      title: "Task Management App",
-      tech: ["Nuxt.js", "Tailwind CSS", "Firebase"],
-      description: "Collaborative task management with real-time synchronization",
+      title: "Collaborative Project Management Suite",
+      tech: ["Nuxt.js", "Tailwind CSS", "Firebase", "WebSocket"],
+      description: "Real-time collaborative workspace with task management, team communication, and progress tracking",
       demo: "#",
       github: "#"
     },
     {
-      title: "Weather Dashboard",
-      tech: ["React", "TypeScript", "Chart.js"],
-      description: "Interactive weather dashboard with data visualization",
+      title: "Interactive Data Visualization Dashboard",
+      tech: ["React", "TypeScript", "Chart.js", "D3.js"],
+      description: "Dynamic dashboard for complex data visualization with interactive charts and real-time analytics",
       demo: "#",
       github: "#"
     },
     {
-      title: "Portfolio Website",
-      tech: ["Vue.js", "SCSS", "Animations"],
-      description: "Responsive portfolio showcasing modern web development techniques",
+      title: "Modern Portfolio & CMS Platform",
+      tech: ["Vue.js", "SCSS", "Strapi CMS", "PWA"],
+      description: "High-performance portfolio platform with headless CMS integration and progressive web app capabilities",
       demo: "#",
       github: "#"
     }
@@ -61,13 +63,13 @@ const Index = () => {
       company: "Vlinq.co",
       position: "Senior Frontend Developer",
       period: "Oct 2023 – Present",
-      description: "Leading frontend development initiatives and mentoring junior developers"
+      description: "Lead frontend architecture decisions, mentor junior developers, and drive technical excellence in modern web application development using Vue.js ecosystem"
     },
     {
       company: "Horizam",
       position: "Frontend Developer", 
       period: "Nov 2021 – Oct 2023",
-      description: "Developed responsive web applications using modern frontend frameworks"
+      description: "Developed and maintained responsive web applications, implemented design systems, and collaborated with cross-functional teams to deliver high-quality user experiences"
     }
   ];
 
@@ -113,15 +115,14 @@ const Index = () => {
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-2">
-                  Frontend Developer | Vue.js Specialist
+                  Senior Frontend Developer | Vue.js & React Specialist
                 </p>
                 <div className="flex items-center justify-center text-slate-500 dark:text-slate-400 mb-6">
                   <MapPin className="h-4 w-4 mr-2" />
                   <span>Lahore, Pakistan</span>
                 </div>
                 <p className="text-lg text-slate-700 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                 Creative-minded Frontend Developer with a passion for sleek UI, smooth UX, and turning ideas into responsive, high-performance web experiences.
-
+                  Passionate Frontend Developer with 3+ years of experience crafting exceptional user experiences. Specializing in modern JavaScript frameworks, performance optimization, and scalable web applications that bridge the gap between design and functionality.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="mailto:asif.reachout@gmail.com">
@@ -170,16 +171,16 @@ const Index = () => {
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                Freelance Success
+                Professional Freelance Services
               </span>
             </h2>
             <Card className="max-w-3xl mx-auto bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl mb-2">
-                  <span className="text-emerald-500 dark:text-emerald-400">30+</span> Projects Completed on Fiverr
+                  <span className="text-emerald-500 dark:text-emerald-400">30+</span> Successful Client Projects
                 </CardTitle>
                 <CardDescription className="text-lg text-slate-600 dark:text-slate-400">
-                  Delivering exceptional web development solutions to clients worldwide
+                  Delivering enterprise-grade frontend solutions to clients across various industries
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center">
@@ -201,15 +202,23 @@ const Index = () => {
                 </div>
                 <div className="space-y-4">
                   <p className="text-slate-700 dark:text-slate-300">
-                    Specialized in creating modern, responsive web applications using Vue.js, React, and cutting-edge frontend technologies.
+                    Specialized in developing scalable, performant web applications using Vue.js, React, and modern frontend technologies. Expert in creating responsive designs, optimizing user experiences, and implementing complex business requirements.
                   </p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-600 dark:text-slate-400">
+                    <div>✓ Custom Web Applications</div>
+                    <div>✓ E-commerce Solutions</div>
+                    <div>✓ Dashboard & Analytics</div>
+                    <div>✓ Progressive Web Apps</div>
+                    <div>✓ API Integration</div>
+                    <div>✓ Performance Optimization</div>
+                  </div>
                   <Button 
                     variant="outline" 
                     className="group border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700"
                     onClick={() => window.open('https://www.fiverr.com/webtechcod', '_blank')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2 group-hover:rotate-45 transition-transform" />
-                    View Fiverr Profile (@webtechcod)
+                    View Professional Profile
                   </Button>
                 </div>
               </CardContent>
@@ -336,9 +345,9 @@ const Index = () => {
             </h2>
             <Card className="max-w-2xl mx-auto bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
               <CardHeader className="text-center">
-                <CardTitle className="text-slate-900 dark:text-slate-100">Get In Touch</CardTitle>
+                <CardTitle className="text-slate-900 dark:text-slate-100">Ready to Collaborate?</CardTitle>
                 <CardDescription className="text-slate-600 dark:text-slate-400">
-                  Ready to collaborate? Let's build something amazing together!
+                  Let's discuss your next project and bring your ideas to life with cutting-edge frontend development.
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center">
@@ -400,10 +409,10 @@ const Index = () => {
         <footer className="py-8 px-4 border-t border-slate-200 dark:border-slate-700">
           <div className="container mx-auto max-w-6xl text-center">
             <p className="text-slate-600 dark:text-slate-400">
-              © 2024 Muhammad Asif. Passionate about frontend development and exploring the multiverse of possibilities.
+              © 2025 Muhammad Asif. Senior Frontend Developer specializing in modern web technologies and exceptional user experiences.
             </p>
             <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">
-              Languages: English (C1) • Urdu • Punjabi | Interests: Sci-fi • Time Travel • Space Exploration
+              Available for freelance projects and full-time opportunities | Remote-friendly
             </p>
           </div>
         </footer>
