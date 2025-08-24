@@ -21,7 +21,7 @@ const Index = () => {
   }, [isDark]);
 
   const skills = [
-    'Vue.js', 'React', 'TypeScript', 'JavaScript (ES6+)', 
+    'Vue.js', 'React', 'TypeScript', 'JavaScript (ES6+)',
     'Nuxt.js', 'Next.js', 'Tailwind CSS', 'SCSS/Sass',
     'Quasar Framework', 'Node.js', 'Git/GitHub', 'Responsive Design',
     'RESTful APIs', 'GraphQL', 'Progressive Web Apps', 'Performance Optimization'
@@ -67,7 +67,7 @@ const Index = () => {
     },
     {
       company: "Horizam",
-      position: "Frontend Developer", 
+      position: "Frontend Developer",
       period: "Nov 2021 – Oct 2023",
       description: "Developed and maintained responsive web applications, implemented design systems, and collaborated with cross-functional teams to deliver high-quality user experiences"
     }
@@ -76,7 +76,7 @@ const Index = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'dark' : ''}`}>
       <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 min-h-screen">
-        
+
         {/* Navigation */}
         <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-gray-200 dark:border-slate-700">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -125,12 +125,12 @@ const Index = () => {
                   Passionate Frontend Developer with 3+ years of experience crafting exceptional user experiences. Specializing in modern JavaScript frameworks, performance optimization, and scalable web applications that bridge the gap between design and functionality.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="mailto:asif.reachout@gmail.com">
-                      <Button className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white border-0">
-                    <Mail className="h-4 w-4 mr-2" />
-                    Get In Touch
-                  </Button>
-                    </a>
+                  <a href="mailto:asif.reachout@gmail.com">
+                    <Button className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white border-0">
+                      <Mail className="h-4 w-4 mr-2" />
+                      Get In Touch
+                    </Button>
+                  </a>
                   <Button variant="outline" className="group border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800">
                     <Download className="h-4 w-4 mr-2 group-hover:animate-bounce" />
                     Download Resume
@@ -154,9 +154,8 @@ const Index = () => {
                 <Badge
                   key={skill}
                   variant="secondary"
-                  className={`px-4 py-2 text-sm font-medium transform transition-all duration-300 hover:scale-105 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-blue-50 dark:hover:bg-slate-700 ${
-                    isVisible ? 'animate-fade-in' : ''
-                  }`}
+                  className={`px-4 py-2 text-sm font-medium transform transition-all duration-300 hover:scale-105 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-blue-50 dark:hover:bg-slate-700 ${isVisible ? 'animate-fade-in' : ''
+                    }`}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {skill}
@@ -212,8 +211,8 @@ const Index = () => {
                     <div>✓ API Integration</div>
                     <div>✓ Performance Optimization</div>
                   </div>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="group border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700"
                     onClick={() => window.open('https://www.fiverr.com/webtechcod', '_blank')}
                   >
@@ -352,8 +351,8 @@ const Index = () => {
               </CardHeader>
               <CardContent className="text-center">
                 <div className="mb-8">
-                  <a 
-                    href="mailto:asif.reachout@gmail.com" 
+                  <a
+                    href="mailto:asif.reachout@gmail.com"
                     className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white rounded-lg font-medium transition-all duration-300 hover:scale-105"
                   >
                     <Mail className="h-5 w-5 mr-2" />
@@ -363,8 +362,8 @@ const Index = () => {
                 <div className="border-t border-slate-200 dark:border-slate-700 pt-6">
                   <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">Follow me on social media</p>
                   <div className="flex items-center justify-center space-x-6">
-                    <a 
-                      href="https://github.com/asif-reachout" 
+                    <a
+                      href="https://github.com/asif-reachout"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex flex-col items-center space-y-2 text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
@@ -374,8 +373,8 @@ const Index = () => {
                       </div>
                       <span className="text-xs font-medium">asif-reachout</span>
                     </a>
-                    <a 
-                      href="https://linkedin.com/in/asif-reachout" 
+                    <a
+                      href="https://linkedin.com/in/asif-reachout"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex flex-col items-center space-y-2 text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
@@ -385,15 +384,15 @@ const Index = () => {
                       </div>
                       <span className="text-xs font-medium">asif-reachout</span>
                     </a>
-                    <a 
-                      href="https://twitter.com/asif_reachout" 
+                    <a
+                      href="https://twitter.com/asif_reachout"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex flex-col items-center space-y-2 text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                     >
                       <div className="p-3 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-blue-50 dark:group-hover:bg-slate-600 transition-colors">
                         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                         </svg>
                       </div>
                       <span className="text-xs font-medium">asif_reachout</span>
