@@ -397,16 +397,17 @@ const Index = () => {
         </section>
 
         {/* Footer */}
-        <footer className="py-8 px-4 border-t border-slate-200 dark:border-slate-700">
-          <div className="container mx-auto max-w-6xl text-center">
-            <p className="text-slate-600 dark:text-slate-400">
-              © 2024 Muhammad Asif. Passionate about frontend development and exploring the multiverse of possibilities.
-            </p>
-            <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">
-              Languages: English (C1) • Urdu • Punjabi | Interests: Sci-fi • Time Travel • Space Exploration
-            </p>
-          </div>
-        </footer>
+      <footer className="py-8 px-4 border-t border-slate-200 dark:border-slate-700">
+  <div className="container mx-auto max-w-6xl text-center">
+    <p className="text-slate-600 dark:text-slate-400">
+      © 2024 Muhammad Asif. Frontend Developer focused on crafting responsive, user-centric web experiences.
+    </p>
+    <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">
+      Languages: English (C1) · Urdu · Punjabi &nbsp;|&nbsp; Interests: UI/UX, Clean Code, and Emerging Tech
+    </p>
+  </div>
+</footer>
+
       </div>
     </div>
   );
